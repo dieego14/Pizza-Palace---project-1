@@ -21,8 +21,8 @@
 //
 //   Output:
 //          Display number of slices the pizza will be divided into based on its diameter,
-//          size of resulting slice in square inches, and
-//          size of resulting slice as a percentage to the target size of 14.125
+//          the size of resulting slice in square inches, and size of resulting slice 
+//          as a percentage to the target size of 14.125
 //
 // Stop Part 1
 
@@ -59,9 +59,9 @@ int main()
 
      cout << "A " << d << " inch pizza can be divided evenly into " << fixed << pizzaSlices << " slices." << endl;
      cout << "The slices will be " << setprecision(3) << resultingSlice
-          << " square inches or approximately " << setprecision(1) << targetSize << "% of the target size\n"
-          << endl;
+          << " square inches or approximately " << setprecision(1) << targetSize << "% of the target size\n" << endl;
 
+     //
      // Part 2
      // Purpose: Calculate how many pizzas will be requiered to serve guests at an event based on 3 scemarios
      //
@@ -122,15 +122,18 @@ int main()
      extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
 
      cout << left
-          << "All guests have 3 slices each " << right << setw(36) << static_cast<int>(estimatedSlices1)
+          << "All guests have 3 slices each " << right << setw(36) 
+          << static_cast<int>(estimatedSlices1)
           << right << setw(22) << numberOfPizzas1
           << right << setw(26) << extraSlices1 << endl;
      cout << left
-          << "2/3 of the guests have 3 slices, and the rest have 2 slices" << right << setw(7) << static_cast<int>(estimatedSlices2)
+          << "2/3 of the guests have 3 slices, and the rest have 2 slices" 
+          << right << setw(7) << static_cast<int>(estimatedSlices2)
           << right << setw(22) << numberOfPizzas2
           << right << setw(26) << extraSlices2 << endl;
      cout << left
-          << "2/3 of the guests have 3 slices, and the rest have 4 slices" << right << setw(7) << static_cast<int>(estimatedSlices3)
+          << "2/3 of the guests have 3 slices, and the rest have 4 slices" 
+          << right << setw(7) << static_cast<int>(estimatedSlices3)
           << right << setw(22) << numberOfPizzas3
           << right << setw(26) << extraSlices3 << endl;
      return 0;
