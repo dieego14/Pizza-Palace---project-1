@@ -44,8 +44,7 @@ int main()
      double resultingSlice;
      double targetSize;
 
-     cout << "Pizza Palace\n"
-          << endl;
+     cout << "Welcome to the Pizza Palace\n" << endl;
      cout << "Enter the diameter of the pizza: ";
 
      cin >> d;
@@ -62,7 +61,8 @@ int main()
           << " square inches or approximately " << setprecision(1) << targetSize << "% of the target size\n"
           << endl;
 
-     // Purpose: Calculate how many pizzas will be requiered to serve guests at an event based on 3 scemarios
+     // Purpose: Calculate how many pizzas will be required to serve guests at an event
+     //          based on 3 scenarios
      //
      // Start Part 2
      //
@@ -77,18 +77,21 @@ int main()
      //          extraSlices1 = (numberOfPizzas1 * pizzaSlices) - estimatedSlices1;
      //
      //       Scenario 2:
-     //          estimatedSlices2 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 2);
+     //          estimatedSlices2 = (round((peopleServed * 0.66)) * 3) +
+     //          (round((peopleServed * 0.33)) * 2);
      //          numberOfPizzas2 = ceil(estimatedSlices2 / pizzaSlices);
      //          extraSlices2 = (numberOfPizzas2 * pizzaSlices) - estimatedSlices2;
      //
      //       Scenario 3:
-     //          estimatedSlices3 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 4);
+     //          estimatedSlices3 = (round((peopleServed * 0.66)) * 3) +
+     //          (round((peopleServed * 0.33)) * 4);
      //          numberOfPizzas3 = ceil(estimatedSlices3 / pizzaSlices);
      //          extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
      //
      //   Output:
-     //             Display scenario descriptions, estimated number of slices guests will eat, number of pizzas required,
-     //             and number of extra left over slices all in tabular form
+     //             Display scenario descriptions, estimated number of slices guests will eat,
+     //             number of pizzas required, and number of extra left over slices all in 
+     //             tabular form
      //
      //
      // Stop Part 2
