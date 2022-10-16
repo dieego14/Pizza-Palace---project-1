@@ -16,7 +16,7 @@
 //          Area = PI*(radius)^2
 //          pizzaSlices = Area / MIN_SIZE_FOR_SLICES
 //          resultingSlices = Area / pizzaSlices;
-//          targetSize = (resultingSlice * MIN_SIZE_FOR_SLICES)*100
+//          targetSize = (resultingSlice / MIN_SIZE_FOR_SLICES) * 100
 //
 //
 //   Output:
@@ -72,7 +72,20 @@ int main()
      //
      //
      //   Programming:
-     //          Estimated slices = peopleServed * pizzaSlices
+     //       Scenario 1:
+     //          estimatedSlices1 = peopleServed * 3;
+     //          numberOfPizzas1 = ceil(estimatedSlices1 / pizzaSlices);
+     //          extraSlices1 = (numberOfPizzas1 * pizzaSlices) - estimatedSlices1;
+     //
+     //       Scenario 2:
+     //          estimatedSlices2 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 2);
+     //          numberOfPizzas2 = ceil(estimatedSlices2 / pizzaSlices);
+     //          extraSlices2 = (numberOfPizzas2 * pizzaSlices) - estimatedSlices2;
+     //
+     //       Scenario 3
+     //          estimatedSlices3 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 4);
+     //          numberOfPizzas3 = ceil(estimatedSlices3 / pizzaSlices);
+     //          extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
      //
      //   Output:
      //             Display scenario descriptions,
