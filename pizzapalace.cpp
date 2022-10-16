@@ -62,8 +62,6 @@ int main()
           << " square inches or approximately " << setprecision(1) << targetSize << "% of the target size\n"
           << endl;
 
-     //
-     // Part 2
      // Purpose: Calculate how many pizzas will be requiered to serve guests at an event based on 3 scemarios
      //
      // Start Part 2
@@ -95,6 +93,7 @@ int main()
      //
      // Stop Part 2
 
+     // Part 2
      int peopleServed;
      double estimatedSlices1, estimatedSlices2, estimatedSlices3;
      int numberOfPizzas1, numberOfPizzas2, numberOfPizzas3;
