@@ -62,37 +62,37 @@ int main()
           << " square inches or approximately " << setprecision(1) << targetSize << "% of the target size\n"
           << endl;
 
-// Part 2
-// Purpose: Calculate how many pizzas will be requiered to serve guests at an event based on 3 scemarios
-//
-// Start Part 2
-//
-//   Input: Prompt user to enter the number of attending guests they wish to serve
-//          Wait for user to enter the number of guests
-//
-//
-//   Programming:
-//       Scenario 1:
-//          estimatedSlices1 = peopleServed * 3;
-//          numberOfPizzas1 = ceil(estimatedSlices1 / pizzaSlices);
-//          extraSlices1 = (numberOfPizzas1 * pizzaSlices) - estimatedSlices1;
-//
-//       Scenario 2:
-//          estimatedSlices2 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 2);
-//          numberOfPizzas2 = ceil(estimatedSlices2 / pizzaSlices);
-//          extraSlices2 = (numberOfPizzas2 * pizzaSlices) - estimatedSlices2;
-//
-//       Scenario 3:
-//          estimatedSlices3 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 4);
-//          numberOfPizzas3 = ceil(estimatedSlices3 / pizzaSlices);
-//          extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
-//
-//   Output:
-//             Display scenario descriptions, estimated number of slices guests will eat, number of pizzas required,
-//             and number of extra left over slices all in tabular form
-//
-//
-// Stop Part 2
+     // Part 2
+     // Purpose: Calculate how many pizzas will be requiered to serve guests at an event based on 3 scemarios
+     //
+     // Start Part 2
+     //
+     //   Input: Prompt user to enter the number of attending guests they wish to serve
+     //          Wait for user to enter the number of guests
+     //
+     //
+     //   Programming:
+     //       Scenario 1:
+     //          estimatedSlices1 = peopleServed * 3;
+     //          numberOfPizzas1 = ceil(estimatedSlices1 / pizzaSlices);
+     //          extraSlices1 = (numberOfPizzas1 * pizzaSlices) - estimatedSlices1;
+     //
+     //       Scenario 2:
+     //          estimatedSlices2 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 2);
+     //          numberOfPizzas2 = ceil(estimatedSlices2 / pizzaSlices);
+     //          extraSlices2 = (numberOfPizzas2 * pizzaSlices) - estimatedSlices2;
+     //
+     //       Scenario 3:
+     //          estimatedSlices3 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 4);
+     //          numberOfPizzas3 = ceil(estimatedSlices3 / pizzaSlices);
+     //          extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
+     //
+     //   Output:
+     //             Display scenario descriptions, estimated number of slices guests will eat, number of pizzas required,
+     //             and number of extra left over slices all in tabular form
+     //
+     //
+     // Stop Part 2
 
      int peopleServed;
      double estimatedSlices1, estimatedSlices2, estimatedSlices3;
@@ -102,9 +102,9 @@ int main()
      cout << "How many people do you wish to serve? ";
      cin >> peopleServed;
      cout << endl;
-     cout << "Guest Scenarios: \t" << right << setw(20) << " Estimated "
-          << setw(24) << "Number of " << setw(24) << "Extra " << endl;
-     cout << setw(41) << "Slices" << setw(28) << "Pizzas Needed" << setw(22) << "Slices" << endl;
+     cout << "Guest Scenarios: \t" << right << setw(46) << " Estimated"
+          << setw(22) << "Number of" << setw(24) << "Extra" << endl;
+     cout << setw(68) << "Slices" << setw(26) << "Pizzas Needed" << setw(22) << "Slices" << endl;
 
      // Scenario 1
      estimatedSlices1 = peopleServed * 3;
@@ -121,20 +121,17 @@ int main()
      numberOfPizzas3 = ceil(estimatedSlices3 / pizzaSlices);
      extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
 
-     // numberOfPizzas = ;
-     // extraSlices = ;
-
      cout << left
-          << "All guests have 3 slices each " << right << setw(9) << static_cast<int>(estimatedSlices1)
-          << right << setw(24) << numberOfPizzas1
+          << "All guests have 3 slices each " << right << setw(36) << static_cast<int>(estimatedSlices1)
+          << right << setw(22) << numberOfPizzas1
           << right << setw(26) << extraSlices1 << endl;
      cout << left
-          << "2/3 of the guests have 3 slices " << right << setw(7) << static_cast<int>(estimatedSlices2)
-          << right << setw(24) << numberOfPizzas2
+          << "2/3 of the guests have 3 slices, and the rest have 2 slices" << right << setw(7) << static_cast<int>(estimatedSlices2)
+          << right << setw(22) << numberOfPizzas2
           << right << setw(26) << extraSlices2 << endl;
      cout << left
-          << "2/3 of the guests have 3 slices " << right << setw(7) << static_cast<int>(estimatedSlices3)
-          << right << setw(24) << numberOfPizzas3
+          << "2/3 of the guests have 3 slices, and the rest have 4 slices" << right << setw(7) << static_cast<int>(estimatedSlices3)
+          << right << setw(22) << numberOfPizzas3
           << right << setw(26) << extraSlices3 << endl;
      return 0;
 }
