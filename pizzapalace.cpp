@@ -62,40 +62,40 @@ int main()
      cout << "The slices will be " << setprecision(3) << resultingSlice
           << " square inches or approximately " << setprecision(1) << targetSize << "% of the target size\n"
           << endl;
-
-     // Purpose: Calculate how many pizzas will be requiered to serve guests at an event based on 3 scemarios
-     //
-     // Start Part 2
-     //
-     //   Input: Prompt user to enter the number of attending guests they wish to serve
-     //          Wait for user to enter the number of guests
-     //
-     //
-     //   Programming:
-     //       Scenario 1:
-     //          estimatedSlices1 = peopleServed * 3;
-     //          numberOfPizzas1 = ceil(estimatedSlices1 / pizzaSlices);
-     //          extraSlices1 = (numberOfPizzas1 * pizzaSlices) - estimatedSlices1;
-     //
-     //       Scenario 2:
-     //          estimatedSlices2 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 2);
-     //          numberOfPizzas2 = ceil(estimatedSlices2 / pizzaSlices);
-     //          extraSlices2 = (numberOfPizzas2 * pizzaSlices) - estimatedSlices2;
-     //
-     //       Scenario 3
-     //          estimatedSlices3 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 4);
-     //          numberOfPizzas3 = ceil(estimatedSlices3 / pizzaSlices);
-     //          extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
-     //
-     //   Output:
-     //             Display scenario descriptions,
-     //             estimated number of slices guests will eat,
-     //             number of pizzas required,
-     //             and number of extra left over slices all in tabular form
-     //
-     //
-     // Stop Part 2
-     //
+          
+// Part 2
+// Purpose: Calculate how many pizzas will be requiered to serve guests at an event based on 3 scemarios
+//
+// Start Part 2
+//
+//   Input: Prompt user to enter the number of attending guests they wish to serve
+//          Wait for user to enter the number of guests
+//
+//
+//   Programming:
+//       Scenario 1:
+//          estimatedSlices1 = peopleServed * 3;
+//          numberOfPizzas1 = ceil(estimatedSlices1 / pizzaSlices);
+//          extraSlices1 = (numberOfPizzas1 * pizzaSlices) - estimatedSlices1;
+//
+//       Scenario 2:
+//          estimatedSlices2 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 2);
+//          numberOfPizzas2 = ceil(estimatedSlices2 / pizzaSlices);
+//          extraSlices2 = (numberOfPizzas2 * pizzaSlices) - estimatedSlices2;
+//
+//       Scenario 3
+//          estimatedSlices3 = (round((peopleServed * 0.66)) * 3) + (round((peopleServed * 0.33)) * 4);
+//          numberOfPizzas3 = ceil(estimatedSlices3 / pizzaSlices);
+//          extraSlices3 = (numberOfPizzas3 * pizzaSlices) - estimatedSlices3;
+//
+//   Output:
+//             Display scenario descriptions, estimated number of slices guests will eat,
+//             number of pizzas required,
+//             and number of extra left over slices all in tabular form
+//
+//
+// Stop Part 2
+//
 
      int peopleServed;
      double estimatedSlices1, estimatedSlices2, estimatedSlices3;
